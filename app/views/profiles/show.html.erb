@@ -1,9 +1,8 @@
 <h1>Profiles#show</h1>
 <p>Find me in app/views/profiles/show.html.erb</p>
 
-    <%@group_bill.admin_id do |admin|%>
-      <%=totalprice%>
-    <%end %> 
+    
+    <%= image_tag @user.profile_picture %>
       
   
 
@@ -22,6 +21,7 @@
     <h4 style="align-text:center;"> MY PROFILE </h4>
   </div>
 
+<%= image_tag @user.profile_picture %>
 <!-- nav conatiner with logo and menu icon -->
   <div class="profile">
         <h1 class="personName"> <%=@user.first_name%> <%=@user.last_name%> <br> </h1>

@@ -110,3 +110,28 @@
     text-align: center;
   }
 }
+
+
+
+.friendsContainer {
+  display: flex;
+  flex-direction:row!important;
+  width:330px;
+  height: 60px;
+  margin-left: 25px;
+  background-color:#EAE5E5;
+  box-shadow: 2px 5px 18px #88888888;
+  padding: 2px;
+}
+
+.friendsContainer option {
+  height:45px;
+  width:45px;
+  padding: 5px;
+  border-radius:35px;
+  background-color: #FF473A;
+  margin: 5px;
+  overflow: hidden;
+  text-align:center;
+  display: inline-block;
+}

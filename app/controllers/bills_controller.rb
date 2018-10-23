@@ -21,7 +21,6 @@ class BillsController < ApplicationController
     @admin=User.find(@group_bill.admin_id)
   end
 
-
   def new 
     @bill = Bill.new 
   end 
@@ -32,9 +31,6 @@ class BillsController < ApplicationController
     users=users[1..-1]
     users.each do |user|
 
-
-
-      
         @bill = Bill.create(
           group_bill_id: group_bill_id
         )
@@ -52,8 +48,6 @@ class BillsController < ApplicationController
 
   def update
   end
-
-
 
   def edit
   end

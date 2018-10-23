@@ -10,15 +10,16 @@ class Users::RegistrationsController < Devise::RegistrationsController
       last_name: params[:user][:last_name],
       email: params[:user][:email],
       encrypted_password: params[:user][:encrypted_password],
-      password_confirmation: params[:user][:password_confirmation]
-      payment_method: params[:user][:payment_method]
+      password_confirmation: params[:user][:password_confirmation],
+      payment_method: params[:user][:payment_method],
+      profile_picture: parmas[:user][:profile_picture]
     )  end
 
   private
 
   # Notice the name of the method
   def sign_up_params
-    params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation, :payment_method)
+    params.require(:user).permit(:first_name, :last_name, :email, :password, :password_confirmation, :payment_method, :profile_picture)
   end
 end
 
@@ -34,14 +35,13 @@ end
   # end
 
   # GET /resource/edit
-  # def edit
-  #   super
-  # end
+  def edit
+    
+  end
 
-  # PUT /resource
-  # def update
-  #   super
-  # end
+  def update
+  
+  end
 
   # DELETE /resource
   # def destroy

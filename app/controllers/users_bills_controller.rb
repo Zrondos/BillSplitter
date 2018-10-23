@@ -17,7 +17,6 @@ class UsersBillsController < ApplicationController
       bill_id: params[:users_bill][:bill_id],
     )
     redirect_to users_bills_path
-
   end
 
   def update
