@@ -17,7 +17,7 @@
             <p class="flex">$<%=item.price %></p>
           <%item.bills.each do |bill|%>
                 <%bill.users.each do |user|%>
-                <div class="dropped-content" id="bill<%bill.id%>" draggable="true" ondragstart="dragstart_handler(event);"> <%=user.first_name.capitalize%><br><%=user.last_name.capitalize%>
+                <div class="dropped-content" id="bill<%bill.id%>" draggable="true"  ondragstart="dragstart_handler(event);"> <%=user.first_name.capitalize%><br><%=user.last_name.capitalize%>
                 </div>
               </div>
                 
